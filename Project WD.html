@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Personal Information Form</title>
+    <style>
+        table {
+            width: 800px;
+            border-collapse: collapse;
+            margin: 20px auto;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            font-size: 24px;
+        }
+
+        th {
+            background-color: #d8d8ff;
+            text-align: center;
+        }
+
+        input[type="text"] {
+            width: 95%;
+            height: 30px;
+        }
+
+        textarea {
+            width: 98%;
+            height: 200px;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        button {
+            font-size: 24px;
+            padding: 10px 20px;
+        }
+    </style>
+</head>
+<body>
+
+<form>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Value</th>
+        </tr>
+
+        <tr>
+            <td>Name</td>
+            <td><input type="text" name="name"></td>
+        </tr>
+
+        <tr>
+            <td>Sex</td>
+            <td>
+                <input type="radio" name="sex" value="Male"> Male <br>
+                <input type="radio" name="sex" value="Female" checked> Female
+            </td>
+        </tr>
+
+        <tr>
+            <td>Eye color</td>
+            <td>
+                <select>
+                    <option>green</option>
+                    <option>blue</option>
+                    <option>brown</option>
+                    <option>black</option>
+                </select>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Check all that apply</td>
+            <td>
+                <input type="checkbox"> Over 6 feet tall <br>
+                <input type="checkbox"> Over 200 pounds
+            </td>
+        </tr>
+
+        <tr>
+            <td colspan="2">
+                Describe your athletic ability:<br><br>
+                <textarea></textarea>
+            </td>
+        </tr>
+
+        <tr>
+            <td colspan="2" class="center">
+                <button type="submit">Enter my information</button>
+            </td>
+        </tr>
+    </table>
+</form>
+
+</body>
+</html>
